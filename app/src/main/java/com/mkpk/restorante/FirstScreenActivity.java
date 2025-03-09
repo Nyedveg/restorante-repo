@@ -1,4 +1,4 @@
-package com.mkpk.restorante.Activity;
+package com.mkpk.restorante;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -6,8 +6,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
-import com.mkpk.restorante.R;
 
 public class FirstScreenActivity extends AppCompatActivity {
 
@@ -26,7 +24,7 @@ public class FirstScreenActivity extends AppCompatActivity {
         startBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FirstScreenActivity.this, MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
         });
